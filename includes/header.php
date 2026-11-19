@@ -13,8 +13,7 @@
   </head>
   <body>
   <div class="main-div">
-    <main class="page">
-      <header class="nv">
+    <header class="nv">
         <a class="lgo" href="index.php" aria-label="Gulf Creative Lab, home">
           <span class="lgm">
             <i>1</i>
@@ -93,6 +92,20 @@
           </button>
         </nav>
       </header>
+      <button type="button" class="cue" id="cue" aria-label="Scroll down">
+        <span class="cue-t">
+          <svg width="14" height="20" viewBox="0 0 14 20" fill="none" aria-hidden="true">
+            <path d="M7 1v17M1 12l6 6 6-6" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+          </span>
+        <span class="cue-l">Scroll</span>
+      </button>
+      <div class="fl" id="fl" aria-hidden="true">
+        <span class="mt"><i>01</i><i data-p="from:Bl" data-pre="From "></i></span><b>Bl</b
+        ><span class="lb">Blog writing</span>
+      </div>
+      <main class="page">
+
 
   
 

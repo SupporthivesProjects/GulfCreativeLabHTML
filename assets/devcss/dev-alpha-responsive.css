@@ -9,6 +9,9 @@
         overflow-x: hidden;
         width: 100%;
     }
-
+    .nv {
+        position: fixed;
+        z-index: 20;
+    }
    
 }

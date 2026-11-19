@@ -85,18 +85,29 @@
         <script src="assets/js/home.js"></script>
         <script>
             $(document).ready(function () {
-            $("#menuBtn").click(function () {
-                $(this).toggleClass("is-active");
-                $("#nav").toggleClass("header-is-active");
-                $("#header-top").toggleClass("header-active");
+                $("#mnx").click(function () {
+                    $(this).toggleClass("is-active");
+                    $("#mn").toggleClass("v");
+                    $("html").toggleClass("lock");
+                });
             });
-        });
+            document.addEventListener('DOMContentLoaded', function () {
+                const currencyID = document.querySelector('#currencyID');
+                const curMain = document.querySelector('.cur');
+
+                if (currencyID) {
+                    currencyID.addEventListener('click', function () {
+                        this.classList.toggle('active');
+                        curMain.classList.toggle('open');
+                    });
+                }
+            });
         </script>
         <script>
             window.addEventListener('scroll', function() {
                 var content = document.querySelector('header');
                 var scrollPosition = window.scrollY;
-                if (scrollPosition > 100) {
+                if (scrollPosition > 10) {
                     content.classList.add("header-scroll", "solid")
                 } else {
                     content.classList.remove("header-scroll", "solid")
@@ -106,6 +117,7 @@
         <script>
         AOS.init();
         </script>
+        
          <script>
         (function () {
             GCL.page({ white: 1 });

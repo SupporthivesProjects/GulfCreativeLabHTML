@@ -43,7 +43,7 @@
             <span>Contact</span>
           </a>
           <div class="n nd cur">
-            <button type="button" class="cb" aria-haspopup="listbox" aria-expanded="false" aria-label="Currency">
+            <button type="button" class="cb" id="currencyID" aria-haspopup="listbox" aria-expanded="false" aria-label="Currency">
               <i>17 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
                   <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5"></path>
                 </svg>
@@ -92,6 +92,72 @@
           </button>
         </nav>
       </header>
+      <div class="mn" id="mn" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="mn-t">
+          <a class="lgo" href="index.html" aria-label="Gulf Creative Lab, home">
+            <span class="lgm">
+              <i>1</i>
+              <b>Gc</b>
+            </span>
+          </a>
+          <div class="mn-tt">
+            <a class="n n-c" href="cart.html" aria-label="Cart">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 4H5.2L7.5 15H17.7L19.7 7H6.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="9" cy="19.5" r="1.5" fill="currentColor"></circle>
+                <circle cx="16.5" cy="19.5" r="1.5" fill="currentColor"></circle>
+              </svg>
+              <em>3</em>
+            </a>
+            <button type="button" class="n mn-x" id="mnx" aria-label="Close menu">
+              <u></u>
+              <u></u>
+            </button>
+          </div>
+        </div>
+        <div class="mn-l">
+          <a href="services.html" style="--i:0">
+            <span class="mn-s">Sv</span>
+            <b>Services</b>
+            <i>13</i>
+          </a>
+          <a href="about.html" style="--i:1">
+            <span class="mn-s">Ab</span>
+            <b>About us</b>
+            <i>14</i>
+          </a>
+          <a href="join-us.html" style="--i:2">
+            <span class="mn-s">Jn</span>
+            <b>Join us</b>
+            <i>15</i>
+          </a>
+          <a href="contact.html" style="--i:3">
+            <span class="mn-s">Ct</span>
+            <b>Contact</b>
+            <i>16</i>
+          </a>
+        </div>
+        <div class="mn-b">
+          <div class="mn-c">
+            <span>Currency</span>
+            <div>
+              <button type="button" data-c="AED" class="on">AED</button>
+              <button type="button" data-c="BHD">BHD</button>
+              <button type="button" data-c="USD">USD</button>
+            </div>
+          </div>
+          <div class="mn-a">
+            <a class="b b-2" href="account-pieces.html">Account <svg class="pen" aria-hidden="true">
+                <path></path>
+              </svg>
+            </a>
+            <a class="b b-v" href="index.html" data-out="">Log out <svg class="pen" aria-hidden="true">
+                <path></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
       <button type="button" class="cue" id="cue" aria-label="Scroll down">
         <span class="cue-t">
           <svg width="14" height="20" viewBox="0 0 14 20" fill="none" aria-hidden="true">

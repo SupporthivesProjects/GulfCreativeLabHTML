@@ -9,11 +9,11 @@
         </h1>
         <p class="hp in" data-r="" style="--d: 0.6"> Blog posts, website copy, scripts, captions and more, written by specialists and ordered online. Pick the element you need and we take it from brief to final draft. </p>
         <div class="hb in" data-r="" style="--d: 0.8">
-          <a class="b b-v" href="services.html">Order content <svg class="pen" aria-hidden="true" viewBox="0 0 171 80">
+          <a class="b b-v" href="servicesphp">Order content <svg class="pen" aria-hidden="true" viewBox="0 0 171 80">
               <path d="M8.39 44.57C4.92 9.31 102.04 -3.92 157.53 13.71c17.34 8.82 10.41 52.90 -38.15 59.51C67.35 79.84 8.39 71.02 4.92 40.16 3.15 22.53 36.14 4.90 81.22 4.90" style="--l: 477px;"></path>
             </svg>
           </a>
-          <a class="b b-2" href="join-us.html">Write with us <svg class="pen" aria-hidden="true" viewBox="0 0 164 80">
+          <a class="b b-2" href="join-usphp">Write with us <svg class="pen" aria-hidden="true" viewBox="0 0 164 80">
               <path d="M8.05 44.57C4.72 9.31 97.86 -3.92 151.08 13.71c16.63 8.82 9.98 52.90 -36.59 59.51C64.59 79.84 8.05 71.02 4.72 40.16 3.02 22.53 34.66 4.90 77.90 4.90" style="--l: 463px;"></path>
             </svg>
           </a>
@@ -635,7 +635,7 @@
           </h2>
           <p class="lead" data-r="" style="--d: 0.2"> Know a subject properly? Apply with the sectors you cover and we will be in touch. </p>
         </div>
-        <a class="b" href="join-us.html#apply" data-r="" style="--d: 0.3">Apply to write <svg class="pen" aria-hidden="true" viewBox="0 0 171 80">
+        <a class="b" href="join-usphp#apply" data-r="" style="--d: 0.3">Apply to write <svg class="pen" aria-hidden="true" viewBox="0 0 171 80">
             <path d="M8.39 44.57C4.92 9.31 102.04 -3.92 157.53 13.71c17.34 8.82 10.41 52.90 -38.15 59.51C67.35 79.84 8.39 71.02 4.92 40.16 3.15 22.53 36.14 4.90 81.22 4.90" style="--l: 477px;"></path>
           </svg>
         </a>
@@ -832,7 +832,7 @@
           }
           $$('.rw').forEach((r) => r.classList.toggle('cur-s', r.dataset.c === c));
         }
-        $('#ob').onclick = () => G.go(CAT[svc].slug + '.html');
+        $('#ob').onclick = () => G.go(CAT[svc].slug + 'php');
 
         const he = $('#he');
         const hx = $('.hx');

@@ -656,7 +656,7 @@
       </div>
     </div>
   </section>
-      <script>
+   <script>
       (function () {
         const G = GCL;
         const $ = G.$;

@@ -106,11 +106,14 @@
         <script>
             window.addEventListener('scroll', function() {
                 var content = document.querySelector('header');
+                const htmlCls = document.querySelector('html')
                 var scrollPosition = window.scrollY;
                 if (scrollPosition > 10) {
                     content.classList.add("header-scroll", "solid")
+                    htmlCls.classList.add("scr", "cmp")
                 } else {
                     content.classList.remove("header-scroll", "solid")
+                    htmlCls.classList.remove("scr", "cmp")
                 }
             });
         </script>

@@ -364,6 +364,134 @@ document.documentElement.classList.add('js');
     return [pageOf(u.pathname), u.hash.slice(1)];
   }
 
+  const NAV = [
+    ['13', 'Sv', 'Services', 'services.html'],
+    ['14', 'Ab', 'About us', 'about.html'],
+    ['15', 'Jn', 'Join us', 'join-us.html'],
+    ['16', 'Ct', 'Contact', 'contact.html'],
+  ];
+  const CARTI =
+    '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">' +
+    '<path d="M3 4H5.2L7.5 15H17.7L19.7 7H6.6" stroke="currentColor" ' +
+    'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<circle cx="9" cy="19.5" r="1.5" fill="currentColor"/>' +
+    '<circle cx="16.5" cy="19.5" r="1.5" fill="currentColor"/></svg>';
+  const LOGO = (tag) =>
+    `<a class="lgo" href="index.html" aria-label="Gulf Creative Lab, home">` +
+    `<span class="lgm"><i>1</i><b>Gc</b></span>` +
+    (tag ? '<span class="wm">Gulf Creative Lab</span>' : '') +
+    `</a>`;
+  function navHTML(o) {
+    const acc = S.user ? ['Ac', 'Account', 'account-pieces.html'] : ['Lg', 'Log in', 'log-in.html'];
+    const on = (c) => (o.cur === c ? ' on" aria-current="page' : '');
+    const links = NAV.map(
+      (n) =>
+        `<a class="n nd${on(n[1])}" href="${n[3]}">` +
+        `<i>${n[0]}</i><b>${n[1]}</b><span>${n[2]}</span></a>`
+    ).join('');
+    const currencies = Object.keys(RATES)
+      .map(
+        (k) =>
+          `<li role="option" tabindex="0" data-c="${k}">` +
+          `<i>17</i><b>${RATES[k][2]}</b><span>${k}</span></li>`
+      )
+      .join('');
+    const accOn = on(acc[0]) + (o.cur === 'Lg' && !S.user ? ' on' : '');
+    const cartOn = o.cur === 'Cr' ? ' on' : '';
+    return (
+      `<header class="nv${o.white ? ' nv-w' : ''}">${LOGO(1)}<nav class="nvl" aria-label="Main">` +
+      links +
+      '<div class="n nd cur">' +
+      '<button type="button" class="cb" aria-haspopup="listbox" aria-expanded="false" ' +
+      'aria-label="Currency"><i>17' +
+      '<svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">' +
+      '<path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5"/></svg></i>' +
+      '<b id="cs"></b><span id="cv"></span></button>' +
+      `<ul class="cl" role="listbox" aria-label="Currency">${currencies}</ul></div>` +
+      `<a class="n nd${accOn}" href="${acc[2]}">` +
+      `<i>18</i><b>${acc[0]}</b><span>${acc[1]}</span></a>` +
+      `<a class="n n-c${cartOn}" href="cart.html" id="cart" aria-label="Cart">` +
+      `<i>19<em id="cc">0</em></i><b>Cr</b><span>Cart</span>${CARTI}</a>` +
+      '<button type="button" class="n nm" id="mnb" aria-label="Open menu" aria-expanded="false">' +
+      '<u></u><u></u><u></u></button></nav></header>'
+    );
+  }
+  function menuHTML() {
+    const links = NAV.map(
+      (n, i) =>
+        `<a href="${n[3]}" style="--i:${i}">` +
+        `<span class="mn-s">${n[1]}</span><b>${n[2]}</b><i>${n[0]}</i></a>`
+    ).join('');
+    const currencies = Object.keys(RATES)
+      .map((k) => `<button type="button" data-c="${k}">${k}</button>`)
+      .join('');
+    const account = S.user
+      ? '<a class="b b-2" href="account-pieces.html">Account</a>' +
+        '<a class="b b-v" href="index.html" data-out>Log out</a>'
+      : '<a class="b b-2" href="log-in.html">Log in</a>' +
+        '<a class="b b-v" href="sign-up.html">Sign up</a>';
+    return (
+      '<div class="mn" id="mn" role="dialog" aria-modal="true" aria-label="Menu" hidden>' +
+      `<div class="mn-t">${LOGO(0)}<div class="mn-tt">` +
+      `<a class="n n-c" href="cart.html" aria-label="Cart">${CARTI}<em>${S.cart.length}</em></a>` +
+      '<button type="button" class="n mn-x" id="mnx" aria-label="Close menu">' +
+      '<u></u><u></u></button></div></div>' +
+      `<div class="mn-l">${links}</div>` +
+      `<div class="mn-b"><div class="mn-c"><span>Currency</span><div>${currencies}</div></div>` +
+      `<div class="mn-a">${account}</div></div></div>`
+    );
+  }
+  const VISA =
+    '<span class="pl" role="img" aria-label="Visa">' +
+    '<svg width="38" height="12" viewBox="0 8.1 24 7.8" aria-hidden="true">' +
+    '<path fill="#1A1F71" d="M9.112 8.262L5.97 15.758H3.92L2.374 ' +
+    '9.775c-.094-.368-.175-.503-.461-.658C1.447 8.864.677 8.627 0 ' +
+    '8.479l.046-.217h3.3a.904.904 0 01.894.764l.817 4.338 2.018-5.102zm8.033 ' +
+    '5.049c.008-1.979-2.736-2.088-2.717-2.972.006-.269.262-.555.822-.628a3.66 3.66 0 ' +
+    '011.913.336l.34-1.59a5.207 5.207 0 00-1.814-.333c-1.917 0-3.266 1.02-3.278 ' +
+    '2.479-.012 1.079.963 1.68 1.698 2.04.756.367 1.01.603 ' +
+    '1.006.931-.005.504-.602.725-1.16.734-.975.015-1.54-.263-1.992-.473l-.351 ' +
+    '1.642c.453.208 1.289.39 2.156.398 2.037 0 3.37-1.006 3.377-2.564m5.061 ' +
+    '2.447H24l-1.565-7.496h-1.656a.883.883 0 00-.826.55l-2.909 ' +
+    '6.946h2.036l.405-1.12h2.488zm-2.163-2.656l1.02-2.815.588 ' +
+    '2.815zm-8.16-4.84l-1.603 7.496H8.34l1.605-7.496z"/></svg></span>';
+  const MASTERCARD =
+    '<span class="pl" role="img" aria-label="Mastercard">' +
+    '<svg width="30" height="19" viewBox="0 0 482.51 298.2" aria-hidden="true">' +
+    '<path fill="#ff5f00" d="M169.81 31.89h143.72v234.42H169.81z"/>' +
+    '<path d="M184.31 149.1a149.5 149.5 0 0 1 56.74-117.21 149.1 149.1 0 1 0 0 ' +
+    '234.42 149.5 149.5 0 0 1-56.74-117.21z" fill="#eb001b"/>' +
+    '<path d="M482.52 149.1a148.95 148.95 0 0 1-241 117.21 149.43 149.43 0 0 0 ' +
+    '0-234.42 148.95 148.95 0 0 1 241 117.21z" fill="#f79e1b"/></svg></span>';
+  const MARKS = '<span class="pm"><span>We accept</span>' + VISA + MASTERCARD + '</span>';
+  function footHTML(o) {
+    const acc = S.user
+      ? '<a href="account-pieces.html">Account</a>'
+      : '<a href="log-in.html">Log in</a>';
+    const closing = o.closing
+      ? '<div class="fc2"><h2><span class="mk" data-r><span>Start with</span></span>' +
+        '<span class="mk" data-r style="--d:.12"><span>one element.</span></span></h2>' +
+        '<a class="b b-v" href="services.html" data-r style="--d:.4">Order content</a></div>'
+      : '';
+    return (
+      `<footer class="fo wrap dk" id="fo">${closing}` +
+      `<div class="fcs" data-r><div class="fb">${LOGO(1)}` +
+      '<p>Content writing, ordered online.<br>From brief to final draft.</p></div>' +
+      '<div class="fl2"><div><h2>Services</h2>' +
+      '<a href="services.html#creative-writing">Creative writing</a>' +
+      '<a href="services.html#advertising">Advertising</a>' +
+      '<a href="services.html#social-media">Social media</a>' +
+      '<a href="services.html#corporate-content">Corporate content</a></div>' +
+      '<div><h2>Company</h2><a href="about.html">About us</a>' +
+      '<a href="join-us.html">Join us</a><a href="contact.html">Contact</a></div>' +
+      `<div><h2>Account</h2>${acc}<a href="cart.html">Cart</a></div>` +
+      '<div><h2>Legal</h2><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a>' +
+      '<button type="button" data-ck>Cookie settings</button></div></div></div>' +
+      '<div class="fh"></div>' +
+      `<div class="fbt" data-r><span>© 2026 Gulf Creative Lab</span>${MARKS}</div></footer>`
+    );
+  }
+
   /* tooltip for anything not built */
   let tip;
   let tipT;
@@ -480,8 +608,17 @@ document.documentElement.classList.add('js');
   }
 
   /* cart count and the flying chip */
-  // header cart badge removed; kept as a no-op so callers still work
-  function bump() {}
+  function bump(quiet) {
+    $$('#cc,.mn .n-c em').forEach((e) => {
+      e.textContent = S.cart.length;
+    });
+    const c = $('#cart');
+    if (c && !quiet) {
+      c.classList.remove('pop');
+      void c.offsetWidth;
+      c.classList.add('pop');
+    }
+  }
   function fly(srcs, done) {
     const c = $('#cart');
     if (RM || !srcs.length || !c) {
@@ -542,6 +679,16 @@ document.documentElement.classList.add('js');
   }
   function setCur(c, quiet) {
     S.cur = c;
+    const cv = $('#cv');
+    const cs = $('#cs');
+    if (cv) cv.textContent = c;
+    if (cs) cs.textContent = RATES[c][2];
+    $$('.cl li').forEach((li) => {
+      const on = li.dataset.c === c;
+      li.classList.toggle('on', on);
+      li.setAttribute('aria-selected', on);
+    });
+    $$('.mn-c button').forEach((b) => b.classList.toggle('on', b.dataset.c === c));
     if (!quiet) {
       paint(true);
       listeners.forEach((f) => f());
@@ -549,7 +696,7 @@ document.documentElement.classList.add('js');
     }
   }
 
-  /* smooth wheel scroll */
+  /* smooth wheel scroll, nav state */
   const lenis = { t: scrollY, c: scrollY, on: false, k: 0.085 };
   let VH = innerHeight;
   const maxY = () => document.documentElement.scrollHeight - VH;
@@ -582,6 +729,20 @@ document.documentElement.classList.add('js');
     hooks.forEach((h) => h(y, lenis.on));
     requestAnimationFrame(frame);
   }
+  let navY = scrollY;
+  let navCmp = false;
+  function navState() {
+    const y = scrollY;
+    const d = y - navY;
+    const h = document.documentElement;
+    if (Math.abs(d) > 3) {
+      navCmp = d > 0;
+      navY = y;
+    }
+    const top = y <= 20;
+    h.classList.toggle('scr', !top);
+    h.classList.toggle('cmp', navCmp && !top);
+  }
   let tRO;
   function remeasure() {
     VH = innerHeight;
@@ -590,7 +751,7 @@ document.documentElement.classList.add('js');
     if (lenis.on) lenis.t = clamp(lenis.t, 0, maxY());
   }
 
-  /* overlays: popups, cookie settings */
+  /* overlays: popups, menu, cookie settings */
   let layer = null;
   function trap(el, onEsc) {
     const prev = document.activeElement;
@@ -1423,11 +1584,90 @@ document.documentElement.classList.add('js');
       location.replace('log-in.html#s=' + enc(S));
       return;
     }
+    
     setCur(S.cur, true);
+    bump(true);
     paint(false);
+    const cl = $('.cur');
+    const cb = $('.cb');
+    const closeC = () => {
+      cl.classList.remove('open');
+      cb.setAttribute('aria-expanded', 'false');
+    };
+    cb.onclick = (e) => {
+      e.stopPropagation();
+      const op = cl.classList.toggle('open');
+      cb.setAttribute('aria-expanded', op);
+      if (op) {
+        const on = $('.cl li.on');
+        on && on.focus();
+      }
+    };
+    $$('.cl li').forEach((li, i, all) => {
+      const pick = () => {
+        setCur(li.dataset.c);
+        closeC();
+        cb.focus();
+      };
+      li.onclick = (e) => {
+        e.stopPropagation();
+        pick();
+      };
+      li.onkeydown = (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          pick();
+        } else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          all[(i + (e.key === 'ArrowDown' ? 1 : all.length - 1)) % all.length].focus();
+        } else if (e.key === 'Escape') {
+          closeC();
+          cb.focus();
+        }
+      };
+    });
+    document.addEventListener('click', closeC);
+    const mn = $('#mn');
+    const mnb = $('#mnb');
+    let untrap = null;
+    const closeM = () => {
+      if (mn.hidden) return;
+      mn.classList.remove('v');
+      mnb.setAttribute('aria-expanded', 'false');
+      document.documentElement.classList.remove('lock');
+      untrap && untrap();
+      setTimeout(
+        () => {
+          mn.hidden = true;
+        },
+        RM ? 0 : 320
+      );
+    };
+    mnb.onclick = () => {
+      mn.hidden = false;
+      void mn.offsetWidth;
+      mn.classList.add('v');
+      mnb.setAttribute('aria-expanded', 'true');
+      document.documentElement.classList.add('lock');
+      untrap = trap(mn, closeM);
+      $('#mnx').focus();
+    };
+    $('#mnx').onclick = closeM;
+    $$('.mn-c button').forEach((b) => {
+      b.onclick = () => setCur(b.dataset.c);
+    });
+    addEventListener('resize', () => {
+      if (innerWidth >= 900) closeM();
+    });
     document.addEventListener(
       'click',
       (e) => {
+        const k = e.target.closest('[data-ck]');
+        if (k) {
+          e.preventDefault();
+          cookieSettings();
+          return;
+        }
         const nb = e.target.closest('[data-nb]');
         if (nb) {
           e.preventDefault();
@@ -1454,16 +1694,19 @@ document.documentElement.classList.add('js');
         }
         const [p, f] = L;
         if (p === here() && f) {
+          closeM();
           if ($('#' + f)) scrollToY('#' + f);
           return;
         }
         if (p === here() && !a.dataset.pre && !('out' in a.dataset)) {
+          closeM();
           closeLayer(true);
           scrollToY(0);
           return;
         }
         if (a.dataset.pre && window[a.dataset.pre]) window[a.dataset.pre](a);
         closeLayer(true);
+        closeM();
         const card = !RM && a.matches('.et,.tl.et') && a.offsetParent ? a : null;
         go(p + (f ? '#' + f : ''), card);
       },
@@ -1473,7 +1716,7 @@ document.documentElement.classList.add('js');
       addEventListener(
         'wheel',
         (e) => {
-          if (e.ctrlKey || innerWidth < 900 || layer) return;
+          if (e.ctrlKey || innerWidth < 900 || layer || !mn.hidden) return;
           if (e.target.closest && e.target.closest('.scrl')) return;
           const mouse =
             e.deltaMode !== 0 ||
@@ -1513,7 +1756,15 @@ document.documentElement.classList.add('js');
         if (e.target === document.documentElement) lenis.on = false;
       });
     }
-    addEventListener('scroll', hideTip, { passive: true });
+    addEventListener(
+      'scroll',
+      () => {
+        hideTip();
+        navState();
+      },
+      { passive: true }
+    );
+    navState();
     addEventListener('resize', () => {
       clearTimeout(tRO);
       tRO = setTimeout(remeasure, 120);
@@ -1560,6 +1811,7 @@ document.documentElement.classList.add('js');
           if (el) {
             const y = el.getBoundingClientRect().top + scrollY - (innerWidth < 900 ? 64 : 96);
             scrollTo(0, y);
+            navState();
           }
         }, 60);
       }
@@ -1570,6 +1822,7 @@ document.documentElement.classList.add('js');
   }
 
   const G = (window.GCL = {
+    MARKS,
     VERSION,
     BUILT,
     CAT,

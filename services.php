@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-  <section class="ih wrap bg-v" aria-label="Services">
+  <section class="ih wrap bg-v  serve1  " aria-label="Services">
     <div class="ih-c">
       <h1 class="h1 mk in" data-r="" style="--d: 0.1">
         <span>Services</span>
@@ -45,7 +45,7 @@
       </div>
     </div>
   </section>
-  <section class="sc wrap bg-p" id="how" aria-label="How ordering works">
+  <section class="sc wrap bg-p  serve2 " id="how" aria-label="How ordering works">
     <h2 class="h2 mk" data-r="">
       <span>How ordering works</span>
     </h2>
@@ -82,7 +82,7 @@
       <i></i>
     </div>
   </section>
-  <section class="sc wrap" aria-label="What each choice does">
+  <section class="sc wrap serve3 " aria-label="What each choice does">
     <div class="hd2 sl-hd">
       <h2 class="h2 mk" data-r="">
         <span>What each choice does</span>
@@ -128,7 +128,7 @@
       </article>
     </div>
   </section>
-  <section class="sc wrap bg-p" id="creative-writing" aria-label="Creative writing">
+  <section class="sc wrap bg-p serve4 " id="creative-writing" aria-label="Creative writing">
     <div class="sl-g">
       <div class="sl-gh">
         <div>
@@ -221,7 +221,7 @@
       </div>
     </div>
   </section>
-  <section class="sc wrap" id="advertising" aria-label="Advertising">
+  <section class="sc wrap serve5 " id="advertising" aria-label="Advertising">
     <div class="sl-g">
       <div class="sl-gh">
         <div>
@@ -301,7 +301,7 @@
       </div>
     </div>
   </section>
-  <section class="sc wrap bg-g" id="social-media" aria-label="Social media">
+  <section class="sc wrap bg-g serve6" id="social-media" aria-label="Social media">
     <div class="sl-g">
       <div class="sl-gh">
         <div>
@@ -394,7 +394,7 @@
       </div>
     </div>
   </section>
-  <section class="sc wrap" id="corporate-content" aria-label="Corporate content">
+  <section class="sc wrap serve7 " id="corporate-content" aria-label="Corporate content">
     <div class="sl-g">
       <div class="sl-gh">
         <div>
@@ -517,4 +517,5 @@
         G.page({ cur: 'Sv', white: 1 });
       })();
     </script>
+    <script></script>
 <?php include 'includes/footer.php'; ?>

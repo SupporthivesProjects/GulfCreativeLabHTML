@@ -1,0 +1,338 @@
+<?php
+  $currentPage = basename($_SERVER['PHP_SELF']);
+?>
+<!doctype php>
+<php lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulf Creative Lab</title>
+    <link rel="icon" href="./assets/logos/mark-amber.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/devcss/mainBase.css">
+  </head>
+  <body>
+  <div class="main-div">
+    <header class="nv">
+        <a class="lgo" href="index.php" aria-label="Gulf Creative Lab, home">
+          <span class="lgm">
+            <i>1</i>
+            <b>Gc</b>
+          </span>
+          <span class="wm">Gulf Creative Lab</span>
+        </a>
+        <nav class="nvl" aria-label="Main">
+          <a class="n nd" href="services.php">
+            <i>13</i>
+            <b>Sv</b>
+            <span>Services</span>
+          </a>
+          <a class="n nd" href="about.php">
+            <i>14</i>
+            <b>Ab</b>
+            <span>About us</span>
+          </a>
+          <a class="n nd" href="join-us.php">
+            <i>15</i>
+            <b>Jn</b>
+            <span>Join us</span>
+          </a>
+          <a class="n nd" href="contact.php">
+            <i>16</i>
+            <b>Ct</b>
+            <span>Contact</span>
+          </a>
+          <div class="n nd cur">
+            <button type="button" class="cb" id="currencyID" aria-haspopup="listbox" aria-expanded="false" aria-label="Currency">
+              <i>17 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                  <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5"></path>
+                </svg>
+              </i>
+              <b id="cs">Bd</b>
+              <span id="cv">BHD</span>
+            </button>
+            <ul class="cl" role="listbox" aria-label="Currency">
+              <li role="option" tabindex="0" data-c="AED" aria-selected="false">
+                <i>17</i>
+                <b>Dh</b>
+                <span>AED</span>
+              </li>
+              <li role="option" tabindex="0" data-c="BHD" class="on" aria-selected="true">
+                <i>17</i>
+                <b>Bd</b>
+                <span>BHD</span>
+              </li>
+              <li role="option" tabindex="0" data-c="USD" aria-selected="false">
+                <i>17</i>
+                <b>Us</b>
+                <span>USD</span>
+              </li>
+            </ul>
+          </div>
+          <a class="n nd" href="log-in.php">
+            <i>18</i>
+            <b>Lg</b>
+            <span>Log in</span>
+          </a>
+          <a class="n n-c" href="cart.php" id="cart" aria-label="Cart">
+            <i>19 <em id="cc">3</em>
+            </i>
+            <b>Cr</b>
+            <span>Cart</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 4H5.2L7.5 15H17.7L19.7 7H6.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="9" cy="19.5" r="1.5" fill="currentColor"></circle>
+              <circle cx="16.5" cy="19.5" r="1.5" fill="currentColor"></circle>
+            </svg>
+          </a>
+          <button type="button" class="n nm" id="mnb" aria-label="Open menu" aria-expanded="false">
+            <u></u>
+            <u></u>
+            <u></u>
+          </button>
+        </nav>
+      </header>
+      <div class="mn" id="mn" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="mn-t">
+          <a class="lgo" href="index.html" aria-label="Gulf Creative Lab, home">
+            <span class="lgm">
+              <i>1</i>
+              <b>Gc</b>
+            </span>
+          </a>
+          <div class="mn-tt">
+            <a class="n n-c" href="cart.html" aria-label="Cart">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 4H5.2L7.5 15H17.7L19.7 7H6.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="9" cy="19.5" r="1.5" fill="currentColor"></circle>
+                <circle cx="16.5" cy="19.5" r="1.5" fill="currentColor"></circle>
+              </svg>
+              <em>3</em>
+            </a>
+            <button type="button" class="n mn-x" id="mnx" aria-label="Close menu">
+              <u></u>
+              <u></u>
+            </button>
+          </div>
+        </div>
+        <div class="mn-l">
+          <a href="services.html" style="--i:0">
+            <span class="mn-s">Sv</span>
+            <b>Services</b>
+            <i>13</i>
+          </a>
+          <a href="about.html" style="--i:1">
+            <span class="mn-s">Ab</span>
+            <b>About us</b>
+            <i>14</i>
+          </a>
+          <a href="join-us.html" style="--i:2">
+            <span class="mn-s">Jn</span>
+            <b>Join us</b>
+            <i>15</i>
+          </a>
+          <a href="contact.html" style="--i:3">
+            <span class="mn-s">Ct</span>
+            <b>Contact</b>
+            <i>16</i>
+          </a>
+        </div>
+        <div class="mn-b">
+          <div class="mn-c">
+            <span>Currency</span>
+            <div>
+              <button type="button" data-c="AED" class="on">AED</button>
+              <button type="button" data-c="BHD">BHD</button>
+              <button type="button" data-c="USD">USD</button>
+            </div>
+          </div>
+          <div class="mn-a">
+            <a class="b b-2" href="account-pieces.html">Account <svg class="pen" aria-hidden="true">
+                <path></path>
+              </svg>
+            </a>
+            <a class="b b-v" href="index.html" data-out="">Log out <svg class="pen" aria-hidden="true">
+                <path></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="cue" id="cue" aria-label="Scroll down">
+        <span class="cue-t">
+          <svg width="14" height="20" viewBox="0 0 14 20" fill="none" aria-hidden="true">
+            <path d="M7 1v17M1 12l6 6 6-6" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+          </span>
+        <span class="cue-l">Scroll</span>
+      </button>
+      <div class="fl" id="fl" aria-hidden="true">
+        <span class="mt"><i>01</i><i data-p="from:Bl" data-pre="From "></i></span><b>Bl</b
+        ><span class="lb">Blog writing</span>
+      </div>
+      <main class="page">
+
+
+  
+
+  <section class="ih nf-h wrap bg-v" aria-label="Page not found">
+  <div class="nf-c">
+    <h1 class="h1 mk in" data-r="" style="--d: 0.1">
+      <span>Not in the table.</span>
+    </h1>
+    <p class="bl in" data-r="" style="--d: 0.35"> The page you were after is not one of our elements. Try the services, or start again from the homepage. </p>
+    <div class="nf-a in" data-r="" style="--d: 0.5">
+      <a class="b b-v" href="services.html">See the services <svg class="pen" aria-hidden="true" viewBox="0 0 192 80">
+          <path d="M9.42 44.57C5.52 9.31 114.57 -3.92 176.88 13.71c19.47 8.82 11.68 52.90 -42.84 59.51C75.62 79.84 9.42 71.02 5.52 40.16 3.53 22.53 40.57 4.90 91.20 4.90" style="--l: 522px;"></path>
+        </svg>
+      </a>
+      <a class="b b-2" href="index.html">Back to home <svg class="pen" aria-hidden="true" viewBox="0 0 168 80">
+          <path d="M8.24 44.57C4.83 9.31 100.25 -3.92 154.77 13.71c17.04 8.82 10.22 52.90 -37.48 59.51C66.17 79.84 8.24 71.02 4.83 40.16 3.09 22.53 35.50 4.90 79.80 4.90" style="--l: 471px;"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="nf-dk dek" id="dk" aria-hidden="true" style="width: max(calc(0*var(--dux,var(--du)) + 440*var(--du))); height: calc(440*var(--du));">
+    <div class="dkc t-v" data-sym="Nf" style="--i:0;--x:calc(0*var(--dux,var(--du)));--y:calc(0*var(--du));--r:-3deg;--sx:calc(0*var(--dux,var(--du)));--sy:calc(30*var(--du));--hx:0px;--hy:-8px;width:calc(440*var(--du));height:calc(440*var(--du));padding:calc(32*var(--du));z-index:1">
+      <span class="tl-m" style="font-size:max(10px,calc(15*var(--du)))">
+        <span>404</span>
+      </span>
+      <div>
+        <b style="display:block;font-size:calc(176*var(--du))">Nf</b>
+        <span class="dl" style="display:block;margin-top:calc(8*var(--du));font-size:max(11px,calc(17*var(--du)))">Not found</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+            <footer class="fo wrap dk" id="fo">
+                <div class="fc2">
+                    <h2>
+                    <span class="mk in" data-r="">
+                        <span>Start with</span>
+                    </span>
+                    <span class="mk in" data-r="" style="--d:.12">
+                        <span>one element.</span>
+                    </span>
+                    </h2>
+                    <a class="b b-v in" href="services.php" data-r="" style="--d:.4">Order content <svg class="pen" aria-hidden="true" viewBox="0 0 171 80">
+                        <path d="M8.39 44.57C4.92 9.31 102.04 -3.92 157.53 13.71c17.34 8.82 10.41 52.90 -38.15 59.51C67.35 79.84 8.39 71.02 4.92 40.16 3.15 22.53 36.14 4.90 81.22 4.90" style="--l: 477px;"></path>
+                    </svg>
+                    </a>
+                </div>
+                <div class="fcs in" data-r="">
+                    <div class="fb">
+                    <a class="lgo" href="index.php" aria-label="Gulf Creative Lab, home">
+                        <span class="lgm">
+                        <i>1</i>
+                        <b>Gc</b>
+                        </span>
+                        <span class="wm">Gulf Creative Lab</span>
+                    </a>
+                    <p>Content writing, ordered online. <br>From brief to final draft. </p>
+                    </div>
+                    <div class="fl2">
+                    <div>
+                        <h2>Services</h2>
+                        <a href="services.php#creative-writing">Creative writing</a>
+                        <a href="services.php#advertising">Advertising</a>
+                        <a href="services.php#social-media">Social media</a>
+                        <a href="services.php#corporate-content">Corporate content</a>
+                    </div>
+                    <div>
+                        <h2>Company</h2>
+                        <a href="about.php">About us</a>
+                        <a href="join-us.php">Join us</a>
+                        <a href="contact.php">Contact</a>
+                    </div>
+                    <div>
+                        <h2>Account</h2>
+                        <a href="log-in.php">Log in</a>
+                        <a href="cart.php">Cart</a>
+                    </div>
+                    <div>
+                        <h2>Legal</h2>
+                        <a href="terms.php">Terms</a>
+                        <a href="privacy.php">Privacy</a>
+                        <button type="button" data-ck="">Cookie settings</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="fh"></div>
+                <div class="fbt in" data-r="">
+                    <span>© 2026 Gulf Creative Lab</span>
+                    <span class="pm">
+                    <span>We accept</span>
+                    <span class="pl" role="img" aria-label="Visa">
+                        <svg width="38" height="12" viewBox="0 8.1 24 7.8" aria-hidden="true">
+                        <path fill="#1A1F71" d="M9.112 8.262L5.97 15.758H3.92L2.374 9.775c-.094-.368-.175-.503-.461-.658C1.447 8.864.677 8.627 0 8.479l.046-.217h3.3a.904.904 0 01.894.764l.817 4.338 2.018-5.102zm8.033 5.049c.008-1.979-2.736-2.088-2.717-2.972.006-.269.262-.555.822-.628a3.66 3.66 0 011.913.336l.34-1.59a5.207 5.207 0 00-1.814-.333c-1.917 0-3.266 1.02-3.278 2.479-.012 1.079.963 1.68 1.698 2.04.756.367 1.01.603 1.006.931-.005.504-.602.725-1.16.734-.975.015-1.54-.263-1.992-.473l-.351 1.642c.453.208 1.289.39 2.156.398 2.037 0 3.37-1.006 3.377-2.564m5.061 2.447H24l-1.565-7.496h-1.656a.883.883 0 00-.826.55l-2.909 6.946h2.036l.405-1.12h2.488zm-2.163-2.656l1.02-2.815.588 2.815zm-8.16-4.84l-1.603 7.496H8.34l1.605-7.496z"></path>
+                        </svg>
+                    </span>
+                    <span class="pl" role="img" aria-label="Mastercard">
+                        <svg width="30" height="19" viewBox="0 0 482.51 298.2" aria-hidden="true">
+                        <path fill="#ff5f00" d="M169.81 31.89h143.72v234.42H169.81z"></path>
+                        <path d="M184.31 149.1a149.5 149.5 0 0 1 56.74-117.21 149.1 149.1 0 1 0 0 234.42 149.5 149.5 0 0 1-56.74-117.21z" fill="#eb001b"></path>
+                        <path d="M482.52 149.1a148.95 148.95 0 0 1-241 117.21 149.43 149.43 0 0 0 0-234.42 148.95 148.95 0 0 1 241 117.21z" fill="#f79e1b"></path>
+                        </svg>
+                    </span>
+                    </span>
+                </div>
+            </footer>
+            </main>
+        </div>
+        <script src="uiframe/js/jquery.min.js"></script>
+        <script src="uiframe/js/bootstrap.bundle.min.js"></script>
+        <script src="uiframe/js/popper.min.js"></script>
+        <script src="uiframe/js/slick.js"></script>
+        <script src="uiframe/js/owl.carousel.js"></script>
+        <script src="uiframe/js/swiper-bundle.min.js"></script>
+        <script src="uiframe/js/flickity.pkgd.min.js"></script>   
+        <script src="uiframe/js/aos.js"></script>
+        <script src="assets/js/catalogue.js"></script>
+        <script src="assets/js/home.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#mnx").click(function () {
+                    $(this).toggleClass("is-active");
+                    $("#mn").toggleClass("v");
+                    $("html").toggleClass("lock");
+                });
+            });
+            document.addEventListener('DOMContentLoaded', function () {
+                const currencyID = document.querySelector('#currencyID');
+                const curMain = document.querySelector('.cur');
+
+                if (currencyID) {
+                    currencyID.addEventListener('click', function () {
+                        this.classList.toggle('active');
+                        curMain.classList.toggle('open');
+                    });
+                }
+            });
+        </script>
+        <script>
+            window.addEventListener('scroll', function() {
+                var content = document.querySelector('header');
+                const htmlCls = document.querySelector('html')
+                var scrollPosition = window.scrollY;
+                if (scrollPosition > 10) {
+                    content.classList.add("header-scroll", "solid")
+                    htmlCls.classList.add("scr", "cmp")
+                } else {
+                    content.classList.remove("header-scroll", "solid")
+                    htmlCls.classList.remove("scr", "cmp")
+                }
+            });
+        </script>
+        <script>
+        AOS.init();
+        </script>
+        
+         <script>
+        (function () {
+            GCL.page({ white: 1 });
+        })();
+        </script>
+
+   </body>
+    </html>

@@ -83,6 +83,7 @@
         <script src="uiframe/js/aos.js"></script>
         <script src="assets/js/catalogue.js"></script>
         <script src="assets/js/home.js"></script>
+        <script src="assets/js/home-main.js"></script>
         <script>
             $(document).ready(function () {
                 $("#mnx").click(function () {

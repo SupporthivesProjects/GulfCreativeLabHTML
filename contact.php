@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
       <section class="ih wrap bg-g" aria-label="Contact">
         <div class="ih-c">
-          <h1 class="h1 mk in" data-r="" style="--d: 0.1"><span>Contact</span></h1>
+          <h1 class="h1 mk in p-0" data-r="" style="--d: 0.1"><span>Contact</span></h1>
           <p class="bl in" data-r="" style="--d: 0.35">
             Ask about a brief before you order, or about an order in progress.
           </p>
@@ -31,7 +31,7 @@
 
       <section class="sc wrap" aria-label="Send a message">
         <div class="hdf">
-          <h2 class="h2 mk" data-r=""><span>Send a message</span></h2>
+          <h2 class="h2 mk p-0" data-r=""><span>Send a message</span></h2>
           <p class="br" data-r="" style="--d: 0.15">
             Tell us what you are working on and what you need to know.
           </p>
@@ -69,7 +69,7 @@
 
       <section class="sc wrap bg-v" aria-label="Before you write">
         <div class="hdf">
-          <h2 class="h2 mk" data-r=""><span>Before you write</span></h2>
+          <h2 class="h2 mk p-0" data-r=""><span>Before you write</span></h2>
           <p class="br" data-r="" style="--d: 0.15">Common questions.</p>
         </div>
         <div class="qas" data-r="" style="--d: 0.1">

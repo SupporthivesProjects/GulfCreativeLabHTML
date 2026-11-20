@@ -16,9 +16,6 @@
 @import url("../../uiframe/css/slick.css");
 @import url("../../uiframe/css/slick-theme.css");
 
-/* --------- pages CSS --------- */
-@import url("../../assets/css/site.css"); 
-
 /* --------- Developer CSS --------- */
 
 @import url("./dhiraj.css");
@@ -30,6 +27,9 @@
 @import url("./diksha.css");
 @import url("./dev-alpha-style.css");
 @import url("./dev-alpha-responsive.css");
+
+/* --------- pages CSS --------- */
+@import url("../../assets/css/site.css"); 
 
 /* ------------font family ---------- */
 @import url("../fonts/fonts.css");

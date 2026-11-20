@@ -1,0 +1,130 @@
+.desktop_nonet {
+    display: none;
+}
+
+.mobile_nonet {
+    display: block;
+}
+
+.dif_flex_style {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.font_sizet {
+    font-size: 176px;
+}
+
+@media only screen and (max-width: 700px) {
+    .mobile_nonet {
+        display: none;
+    }
+
+    .desktop_nonet {
+        display: block;
+    }
+
+    .font_sizet {
+        font-size: 120px;
+    }
+
+    .dif_paddingt {
+        padding-bottom: 40px;
+    }
+
+    .phone_gapt2 {
+        gap: 32px;
+    }
+
+    .fifteenpixel_t {
+        font-size: 15px!important;
+    }
+
+    .seventeenpixel_t {
+        font-size: 17px;
+    }
+
+    .diff_pad_topt {
+        padding-top: 40px;
+    }
+
+    .top_tt {
+        font-size: 14px!important;
+line-height: 120%!important; /* 16.8px */
+
+    }
+    .seeventeen_pixeld {
+font-size: 17px!important;
+    }
+     .fortyt_pixeld {
+font-size: 40px!important;
+    }
+    .bottom_tt {
+        font-size: 72px!important;
+
+    }
+    .dif_whole_padt {
+        padding: 16px!important;
+    }
+    .phone_gapt {
+            gap: 16px;
+    }
+    .margin_topt {
+        margin-top: 32px;
+    }
+    .dif_mobt_gap {
+        gap: 32px!important;
+    }
+    .fontsize_bara {
+        font-size: 12px!important;
+    }
+    .dif_colt {
+        flex-direction: column;
+        gap: 8px;
+            align-items: flex-start;
+    }
+    .twentyfiur_gapt {
+        gap: 24px!important;
+    }
+    .no_gapt {
+        gap: 0px;
+    }
+}
+
+@media only screen and (min-width: 780px) and (max-width:991px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1151px) {}
+
+@media only screen and (min-width: 1152px) and (max-width:1279px) {}
+
+@media only screen and (min-width: 1280px) and (max-width:1348px) {}
+
+@media only screen and (min-width: 1349px) and (max-width:1439px) {}
+
+@media only screen and (min-width: 1440px) and (max-width:1499px) {}
+
+@media only screen and (min-width: 1500px) and (max-width:1599px) {}
+
+@media only screen and (min-width: 1600px) and (max-width:1699px) {}
+
+@media only screen and (min-width: 1700px) and (max-width:1799px) {}
+
+@media only screen and (min-width: 1800px) and (max-width:1919px) {}
+
+
+
+
+
+
+
+
+
+
+.dd-l {
+  display: none;
+}
+
+.dd-l.open {
+  display: block;
+}

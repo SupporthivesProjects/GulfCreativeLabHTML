@@ -483,7 +483,7 @@
       <div class="stk" id="grs">
         <div class="grs">
           <div class="gh2">
-            <h2 class="h2 mk" data-r="">
+            <h2 class="h2 mk p-0" data-r="">
               <span>Writer grades</span>
             </h2>
             <p class="lead" data-r="" style="--d: 0.2"> Pick the grade that suits how much the piece has to do. You can choose a different one for every order. </p>

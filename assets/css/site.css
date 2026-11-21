@@ -1647,7 +1647,7 @@ html:not(.scr) .nv-w .nd:not(.on):hover {
 .qa button {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
   width: 100%;
   padding: calc(28 * var(--u)) 0;

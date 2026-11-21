@@ -1,0 +1,48 @@
+/* SERVICES */
+.serve1{
+        align-items: flex-end !important;
+}
+
+.serve1 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+padding-bottom: 0 !important;
+}
+
+
+/* Desktop: normal grid */
+#how .how-dots {
+  display: none;
+}
+
+
+/* BREIF */
+
+.breif1 , .breif2{
+background: var(--brand-surface-mint, #E9F7F2) !important;
+}
+
+
+.fd.dd .dd-b {
+  position: relative;
+  padding-right: 24px;
+}
+
+
+.fd.dd .dd-b .chev {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 7px;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+.fd.dd.dd-o .dd-b .chev {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+
+.breif2 {
+  position: relative;
+}

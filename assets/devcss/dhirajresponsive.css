@@ -1,0 +1,119 @@
+@media only screen and (max-device-width: 600px) {
+
+    #how .gr4.car.scrl {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 12px;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+  }
+
+  #how .gr4.car.scrl::-webkit-scrollbar {
+    display: none;
+  }
+
+  #how .gr4.car.scrl .sl-st {
+    flex: 0 0 82%;
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+
+  /* Single pagination */
+  #how .how-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+  }
+
+  #how .how-dots button {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #bdbdbd;
+    cursor: pointer;
+    transition: width .3s ease, background .3s ease;
+  }
+
+  #how .how-dots button.active {
+    width: 22px;
+    border-radius: 20px;
+    background: var(--brand-ink, #0C1428);
+  }
+
+  .serve2{
+    background: var(--base-white, #FFF);
+  }
+
+
+    .serve2  .car {
+        display: flex !important;
+        gap: 12px;
+        margin: 0 -24px 0px 0px;
+        padding: 0 24px 4px;}
+
+      .serve2  .bs{
+        color: var(--brand-text-muted, #55525C);
+font-family: "Schibsted Grotesk";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 21px */
+      }
+
+
+    .serve2  .sl-st{
+        padding: 0px;
+      }
+
+
+.serve2  .sl-st.in:before {
+    transform: none;
+    display: none;
+}
+
+  .breif2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #yo {
+    position: static !important;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+  }
+
+  
+}
+
+
+@media only screen and (min-device-width: 950px) and (max-device-width: 998px) {}
+
+
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1199px) {}
+
+
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1348px) {}
+
+@media only screen and (min-device-width: 1349px) and (max-device-width: 1439px) {}
+
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1499px) {}
+
+@media only screen and (min-device-width: 1500px) and (max-device-width: 1699px) {}
+
+@media only screen and (min-device-width: 1700px) and (max-device-width: 1799px) {}
+
+@media only screen and (min-device-width: 1800px) and (max-device-width: 1919px) {}
+
+@media only screen and (min-device-width: 1920px) and (max-device-width: 1920px) {}

@@ -2021,9 +2021,9 @@ html:not(.scr) .nv-w .nd:not(.on):hover {
   .car {
     display: flex !important;
     gap: 12px;
-    margin: 0 -24px;
+    margin: 0;
     padding: 0 24px 4px;
-    overflow-x: auto;
+    overflow: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
@@ -2059,6 +2059,26 @@ html:not(.scr) .nv-w .nd:not(.on):hover {
   }
   .dk .dots i.on {
     background: #fff;
+  }
+  .sec.ho .stk{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sec.ho .pin .stk .hd{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .sec.pk.wrap{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sec.pk.wrap .hd{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .sec .dots{
+    margin-left: 24px;
+    margin-bottom: 40px;
   }
   .cd {
     padding: 32px;
@@ -4279,6 +4299,7 @@ html:not(.scr) .nv-w .nd:not(.on):hover {
   background: #fafafa;
   border: 1px solid #16151a14;
   border-radius: 12px;
+  width: 100%;
 }
 .eq,
 #mix {
@@ -4886,8 +4907,32 @@ html:not(.scr) .nv-w .nd:not(.on):hover {
   }
   .eq {
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
   }
+  .eq {
+    display: grid;
+    grid-template-areas:
+        "one one"
+        "two two"
+        "three four";
+}
+.eq > span:nth-child(1) {
+    grid-area: one;
+}
+
+.eq > span:nth-child(2) {
+    grid-area: two;
+}
+
+.eq > span:nth-child(3) {
+    grid-area: three;
+}
+
+.eq > span:nth-child(4) {
+    grid-area: four;
+}
   #mix {
     gap: 8px;
   }
@@ -4933,7 +4978,7 @@ html:not(.scr) .nv-w .nd:not(.on):hover {
   }
   .stk {
     position: relative;
-    height: auto;
+    height: auto !important;
     padding: 40px 24px 24px;
     overflow: visible;
   }
@@ -5529,7 +5574,25 @@ html:not(.scr) .nv-w .nd:not(.on):hover {
   z-index: 5;
   overflow: visible;
 }
-/* Main sections */
+
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+    html,
+    body,
+    main,
+    .main-container,
+    #smooth-wrapper,
+    #content {
+        overflow: visible !important;
+        overflow-x: clip !important;
+    }
+
+    /* Main sections */
 .sec.ho,
 .sec.gr,
 .sec.sv {
@@ -5565,15 +5628,8 @@ html:not(.scr) .nv-w .nd:not(.on):hover {
 .sec.sv .stk::-webkit-scrollbar {
     display: none;
 }
+}
 
-@media screen and (min-width: 900px) {
-    html,
-    body,
-    main,
-    .main-container,
-    #smooth-wrapper,
-    #content {
-        overflow: visible !important;
-        overflow-x: clip !important;
-    }
+.mn{
+  display: none;
 }

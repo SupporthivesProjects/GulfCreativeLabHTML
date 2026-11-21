@@ -21,4 +21,12 @@
     
 }
 @media only screen and (max-width: 600px) {
+    .lgm i{
+        color: rgba(255, 255, 255, 0.70);
+        font-family: "Schibsted Grotesk";
+        font-size: 7.714px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
 }

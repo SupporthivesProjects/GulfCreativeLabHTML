@@ -1,10 +1,10 @@
 <?php include 'includes/header.php'; ?>
-  <section class="ih wrap bg-y" aria-label="Join us">
+  <section class="ih wrap bg-y mb-flex-rev" aria-label="Join us">
     <div class="ih-c">
-      <h1 class="h1 mk in" data-r="" style="--d: 0.1">
-        <span>Join us</span>
+      <h1 class="h1 mk in marb-0" data-r="" style="--d: 0.1">
+        <span class="marb-0">Join us</span>
       </h1>
-      <p class="bl in" data-r="" style="--d: 0.35"> If you know a sector from the inside and can write to a brief, we want to hear from you. </p>
+      <p class="bl in fs-21 mb-17" data-r="" style="--d: 0.35"> If you know a sector from the inside and can write to a brief, we want to hear from you. </p>
     </div>
     <div id="dk" aria-hidden="true" class="dek" style="width: max(calc(0*var(--dux,var(--du)) + 200*var(--du)),calc(96*var(--dux,var(--du)) + 200*var(--du)),calc(192*var(--dux,var(--du)) + 200*var(--du))); height: calc(236*var(--du));">
       <div class="dkc t-y" data-sym="Fd" style="--i:0;--x:calc(0*var(--dux,var(--du)));--y:calc(0*var(--du));--r:8deg;--sx:calc(96*var(--dux,var(--du)));--sy:calc(10*var(--du));--hx:-22px;--hy:-6px;width:calc(200*var(--du));height:calc(176*var(--du));padding:calc(16*var(--du));z-index:1">
@@ -13,7 +13,7 @@
         </span>
         <div>
           <b style="display:block;font-size:calc(50*var(--du))">Fd</b>
-          <span class="dl" style="display:block;margin-top:calc(8*var(--du));font-size:max(11px,calc(13*var(--du)))">Food and drink</span>
+          <span class="dl fs-13" style="display:block;margin-top:calc(8*var(--du));font-size:max(11px,calc(13*var(--du)))">Food and drink</span>
         </div>
       </div>
       <div class="dkc t-p" data-sym="Fi" style="--i:1;--x:calc(96*var(--dux,var(--du)));--y:calc(0*var(--du));--r:-6deg;--sx:calc(96*var(--dux,var(--du)));--sy:calc(10*var(--du));--hx:0px;--hy:-6px;width:calc(200*var(--du));height:calc(176*var(--du));padding:calc(16*var(--du));z-index:2">
@@ -22,7 +22,7 @@
         </span>
         <div>
           <b style="display:block;font-size:calc(50*var(--du))">Fi</b>
-          <span class="dl" style="display:block;margin-top:calc(8*var(--du));font-size:max(11px,calc(13*var(--du)))">Finance</span>
+          <span class="dl fs-13" style="display:block;margin-top:calc(8*var(--du));font-size:max(11px,calc(13*var(--du)))">Finance</span>
         </div>
       </div>
       <div class="dkc t-g" data-sym="He" style="--i:2;--x:calc(192*var(--dux,var(--du)));--y:calc(20*var(--du));--r:-1deg;--sx:calc(96*var(--dux,var(--du)));--sy:calc(10*var(--du));--hx:22px;--hy:-6px;width:calc(200*var(--du));height:calc(176*var(--du));padding:calc(16*var(--du));z-index:3">
@@ -31,27 +31,27 @@
         </span>
         <div>
           <b style="display:block;font-size:calc(50*var(--du))">He</b>
-          <span class="dl" style="display:block;margin-top:calc(8*var(--du));font-size:max(11px,calc(13*var(--du)))">Health</span>
+          <span class="dl fs-13" style="display:block;margin-top:calc(8*var(--du));font-size:max(11px,calc(13*var(--du)))">Health</span>
         </div>
       </div>
     </div>
   </section>
   <section class="sc wrap" aria-label="Why write for us">
     <h2 class="h2 mk" data-r="">
-      <span>Why write for us</span>
+      <span class="fs-64 mb-32">Why write for us</span>
     </h2>
     <div class="gr3 jn-rs car scrl">
       <article class="cd bg-p" data-r="" style="--d: 0.05">
         <h3 class="h3">Briefs in your sectors</h3>
-        <p class="br">You tell us what you know. The briefs that reach you match it.</p>
+        <p class="br fs-17 mb-15">You tell us what you know. The briefs that reach you match it.</p>
       </article>
       <article class="cd bg-p" data-r="" style="--d: 0.13">
         <h3 class="h3">Everything set before you start</h3>
-        <p class="br"> Each brief arrives with the length, voice and audience already decided. </p>
+        <p class="br fs-17 mb-15"> Each brief arrives with the length, voice and audience already decided. </p>
       </article>
       <article class="cd bg-p" data-r="" style="--d: 0.21">
         <h3 class="h3">Notes from an editor</h3>
-        <p class="br">Feedback on your drafts comes from an editor and is about the writing.</p>
+        <p class="br fs-17 mb-15">Feedback on your drafts comes from an editor and is about the writing.</p>
       </article>
     </div>
     <div class="dots" aria-hidden="true">
@@ -60,103 +60,103 @@
       <i></i>
     </div>
   </section>
-  <section class="sc wrap" style="padding-top: 0" aria-label="Bring a sector you know">
+  <section class="sc wrap" aria-label="Bring a sector you know">
     <div class="hd2 jn-hd">
       <h2 class="h2 mk" data-r="">
-        <span>Bring a sector you know</span>
+        <span class="fs-64 mb-32">Bring a sector you know</span>
       </h2>
-      <p class="bl" data-r="" style="--d: 0.2"> Food and drink, finance, property, health or something else entirely. If you can write about it from the inside, tell us. </p>
+      <p class="bl fs-21" data-r="" style="--d: 0.2"> Food and drink, finance, property, health or something else entirely. If you can write about it from the inside, tell us. </p>
     </div>
     <div class="jn-bn">
       <div data-r="">
         <div class="tl jn-t t-y big">
-          <span>01</span>
+          <span class="fs-13">01</span>
           <div>
             <b>Fd</b>
-            <i>Food and drink</i>
+            <i class="fs-17">Food and drink</i>
           </div>
         </div>
       </div>
       <div class="jn-col" data-r="" style="--d: 0.1">
         <div class="jn-row">
           <div class="tl jn-t t-p">
-            <span>02</span>
+            <span class="fs-13">02</span>
             <div>
               <b>Fi</b>
-              <i>Finance</i>
+              <i class="fs-17">Finance</i>
             </div>
           </div>
           <div class="tl jn-t t-v">
-            <span>03</span>
+            <span class="fs-13">03</span>
             <div>
               <b>Py</b>
-              <i>Property</i>
+              <i class="fs-17">Property</i>
             </div>
           </div>
         </div>
         <div class="jn-row">
           <div class="tl jn-t t-g">
-            <span>04</span>
+            <span class="fs-13">04</span>
             <div>
               <b>He</b>
-              <i>Health</i>
+              <i class="fs-17">Health</i>
             </div>
           </div>
           <div class="tl jn-t t-y">
-            <span>05</span>
+            <span class="fs-13">05</span>
             <div>
               <b>Ho</b>
-              <i>Hospitality</i>
+              <i class="fs-17">Hospitality</i>
             </div>
           </div>
         </div>
       </div>
       <div class="jn-col" data-r="" style="--d: 0.2">
         <div class="tl jn-t t-v">
-          <span>06</span>
+          <span class="fs-13">06</span>
           <div>
             <b>Te</b>
-            <i>Tech</i>
+            <i class="fs-17">Tech</i>
           </div>
         </div>
         <div class="jn-row">
           <div class="tl jn-t t-p">
-            <span>07</span>
+            <span class="fs-13">07</span>
             <div>
               <b>Tr</b>
-              <i>Travel</i>
+              <i class="fs-17">Travel</i>
             </div>
           </div>
           <div class="tl jn-t t-k">
-            <span>08</span>
+            <span class="fs-13">08</span>
             <div>
               <b>?</b>
-              <i>Yours</i>
+              <i class="fs-17">Yours</i>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="sc wrap" style="padding-top: 0" aria-label="How it works for writers">
+  <section class="sc wrap" aria-label="How it works for writers">
     <h2 class="h2 mk" data-r="">
-      <span>How it works for writers</span>
+      <span class="fs-64 mb-32">How it works for writers</span>
     </h2>
     <div class="gr3 jn-sw car scrl">
       <article class="cd" data-r="" style="--d: 0.05">
-        <b aria-hidden="true">01</b>
-        <h3 class="h3">Apply</h3>
-        <p class="br"> Send us your sectors, two or three samples and a few lines about the work you do best. </p>
+        <b aria-hidden="true" class="fs-120 mb-72">01</b>
+        <h3 class="h3 fs-40 mb-28">Apply</h3>
+        <p class="br fs-17 mb-15"> Send us your sectors, two or three samples and a few lines about the work you do best. </p>
       </article>
       <article class="cd" data-r="" style="--d: 0.15">
-        <b aria-hidden="true">02</b>
-        <h3 class="h3">Hear back</h3>
-        <p class="br">We read what you send and get in touch if your sectors fit our briefs.</p>
+        <b aria-hidden="true" class="fs-120 mb-72">02</b>
+        <h3 class="h3 fs-40 mb-28">Hear back</h3>
+        <p class="br fs-17 mb-15">We read what you send and get in touch if your sectors fit our briefs.</p>
       </article>
       <article class="cd" data-r="" style="--d: 0.25">
-        <b aria-hidden="true">03</b>
-        <h3 class="h3">Write to briefs</h3>
-        <p class="br"> Briefs reach you by subject with the voice and length set, and an editor reads each draft. </p>
+        <b aria-hidden="true" class="fs-120 mb-72">03</b>
+        <h3 class="h3 fs-40 mb-28">Write to briefs</h3>
+        <p class="br fs-17 mb-15"> Briefs reach you by subject with the voice and length set, and an editor reads each draft. </p>
       </article>
     </div>
     <div class="dots" aria-hidden="true">
@@ -168,9 +168,9 @@
   <section class="sc wrap bg-y" id="apply" aria-label="Apply to write">
     <div class="hdf">
       <h2 class="h2 mk" data-r="">
-        <span>Apply to write</span>
+        <span class="fs-64 mb-32">Apply to write</span>
       </h2>
-      <p class="br" data-r="" style="--d: 0.15"> A few lines about the sectors you know is enough. </p>
+      <p class="br fs-17" data-r="" style="--d: 0.15"> A few lines about the sectors you know is enough. </p>
     </div>
     <form class="frm-c fw" id="frm" novalidate="" data-r="" style="--d: 0.2">
       <div class="fst">

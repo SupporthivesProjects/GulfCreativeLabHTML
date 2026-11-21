@@ -1,8 +1,8 @@
 <?php include 'includes/header.php'; ?>
 
-<section class="ih wrap bg-v" aria-label="Privacy">
-        <div class="ih-c">
-          <h1 class="h1 mk" data-r style="--d: 0.1"><span>Privacy</span></h1>
+      <section class="ih wrap bg-v" aria-label="Privacy">
+        <div class="ih-c privacy_out">
+          <h1 class="h1 mk acc_d_h1" data-r style="--d: 0.1"><span>Privacy</span></h1>
           <p class="bl" data-r style="--d: 0.35">
             Last updated 28 October 2026. This policy covers what Gulf Creative Lab holds about you
             and why.
@@ -10,7 +10,7 @@
         </div>
       </section>
       <section class="sc wrap" aria-label="Privacy in full">
-        <div class="lgl">
+        <div class="lgl privacy_out2">
           <section data-r style="--d: 0.1">
             <h2 class="h3">What we hold</h2>
             <p class="bl">
@@ -56,5 +56,5 @@
         </div>
       </section>
 
-
+      
 <?php include 'includes/footer.php'; ?>

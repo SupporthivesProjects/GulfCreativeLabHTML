@@ -1,7 +1,8 @@
 <?php include 'includes/header.php'; ?>
+
   <section class="ih ac-h wrap bg-y" aria-label="Your orders">
     <div class="ac-hc">
-      <h1 class="h1 mk in" data-r="" style="--d: 0.1">
+      <h1 class="h1 mk in acc_d_h1" data-r="" style="--d: 0.1">
         <span>Your orders</span>
       </h1>
       <p class="bl in" data-r="" style="--d: 0.35"> Every piece you have ordered, where it is, and the draft when it lands. </p>
@@ -26,7 +27,7 @@
     </nav>
   </section>
   <section class="ac wrap" aria-label="Orders">
-    <div id="list">
+    <div id="list" class="acc_pi_list">
       <article class="ac-p in" data-r="" style="--d:0.10">
         <span class="ts t-p">Bl</span>
         <div class="ac-pc">
@@ -126,4 +127,5 @@
       </article>
     </div>
   </section>
+
 <?php include 'includes/footer.php'; ?>

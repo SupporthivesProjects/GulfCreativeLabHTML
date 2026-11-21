@@ -45,43 +45,45 @@
       </div>
     </div>
   </section>
-  <section class="sc wrap bg-p  serve2 " id="how" aria-label="How ordering works">
-    <h2 class="h2 mk" data-r="">
-      <span>How ordering works</span>
-    </h2>
-    <div class="gr4 car scrl">
-      <article class="sl-st" data-r="" style="--d: 0.05">
-        <span>01</span>
-        <b>Pi</b>
-        <h3 class="h5">Pick your piece</h3>
-        <p class="bs"> Every service has a page with formats, a worked price and a sample. Open the one you need, or mix a few from the table. </p>
-      </article>
-      <article class="sl-st" data-r="" style="--d: 0.15">
-        <span>02</span>
-        <b>Se</b>
-        <h3 class="h5">Set the details</h3>
-        <p class="bs"> Length, writer grade, turnaround and images. Each choice shows its price as you make it, and the total updates beside the form. </p>
-      </article>
-      <article class="sl-st" data-r="" style="--d: 0.25">
-        <span>03</span>
-        <b>Br</b>
-        <h3 class="h5">Send the brief</h3>
-        <p class="bs"> Who it is for, what it has to do and how it should sound. Attach anything you already have. A simple form covers the basics if you are short on time. </p>
-      </article>
-      <article class="sl-st" data-r="" style="--d: 0.35">
-        <span>04</span>
-        <b>Dr</b>
-        <h3 class="h5">Download the draft</h3>
-        <p class="bs"> Pay once from a free account. The draft lands there, and two rounds of revisions are included. </p>
-      </article>
-    </div>
-    <div class="dots" aria-hidden="true">
-      <i class="on"></i>
-      <i></i>
-      <i></i>
-      <i></i>
-    </div>
-  </section>
+
+<section class="sc wrap bg-p serve2" id="how" aria-label="How ordering works">
+  <h2 class="h2 mk in" data-r="">
+    <span>How ordering works</span>
+  </h2>
+
+  <div class="gr4 car scrl">
+    <article class="sl-st in" data-r="" style="--d: 0.05">
+      <span>01</span>
+      <b>Pi</b>
+      <h3 class="h5">Pick your piece</h3>
+      <p class="bs">Every service has a page with formats, a worked price and a sample. Open the one you need, or mix a few from the table.</p>
+    </article>
+
+    <article class="sl-st in" data-r="" style="--d: 0.15">
+      <span>02</span>
+      <b>Se</b>
+      <h3 class="h5">Set the details</h3>
+      <p class="bs">Length, writer grade, turnaround and images. Each choice shows its price as you make it, and the total updates beside the form.</p>
+    </article>
+
+    <article class="sl-st in" data-r="" style="--d: 0.25">
+      <span>03</span>
+      <b>Br</b>
+      <h3 class="h5">Send the brief</h3>
+      <p class="bs">Who it is for, what it has to do and how it should sound. Attach anything you already have. A simple form covers the basics if you are short on time.</p>
+    </article>
+
+    <article class="sl-st in" data-r="" style="--d: 0.35">
+      <span>04</span>
+      <b>Dr</b>
+      <h3 class="h5">Download the draft</h3>
+      <p class="bs">Pay once from a free account. The draft lands there, and two rounds of revisions are included.</p>
+    </article>
+  </div>
+
+
+</section>
+
   <section class="sc wrap serve3 " aria-label="What each choice does">
     <div class="hd2 sl-hd">
       <h2 class="h2 mk" data-r="">
@@ -519,3 +521,79 @@
     </script>
     <script></script>
 <?php include 'includes/footer.php'; ?>
+
+<script>
+
+(function () {
+  const section = document.querySelector('#how');
+  if (!section) return;
+
+  const slider = section.querySelector('.gr4.car.scrl');
+  const dots = [...section.querySelectorAll('.how-dots button')];
+
+  if (!slider || !dots.length) return;
+
+  const slides = [...slider.querySelectorAll('.sl-st')];
+
+  if (!slides.length) return;
+
+  function isMobile() {
+    return window.matchMedia('(max-width: 767px)').matches;
+  }
+
+  function updateDots() {
+    if (!isMobile()) return;
+
+    const sliderLeft = slider.getBoundingClientRect().left;
+
+    let activeIndex = 0;
+    let smallestDistance = Infinity;
+
+    slides.forEach((slide, index) => {
+      const distance = Math.abs(
+        slide.getBoundingClientRect().left - sliderLeft
+      );
+
+      if (distance < smallestDistance) {
+        smallestDistance = distance;
+        activeIndex = index;
+      }
+    });
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === activeIndex);
+      dot.setAttribute(
+        'aria-current',
+        index === activeIndex ? 'true' : 'false'
+      );
+    });
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      if (!isMobile()) return;
+
+      slides[index].scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'start'
+      });
+    });
+  });
+
+  let scrollTimeout;
+
+  slider.addEventListener('scroll', () => {
+    if (!isMobile()) return;
+
+    clearTimeout(scrollTimeout);
+
+    scrollTimeout = setTimeout(updateDots, 50);
+  }, { passive: true });
+
+  window.addEventListener('resize', updateDots);
+
+  updateDots();
+})();
+
+</script>

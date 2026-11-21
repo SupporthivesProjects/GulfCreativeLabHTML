@@ -1,0 +1,123 @@
+.about-last-text{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+}
+.class-h2{
+    color: var(--brand-black, #16151A);
+margin: 0px;
+font-family: "Young Serif";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; 
+}
+.class-p{
+    color: var(--brand-text-muted, #55525C);
+margin: 0px;
+font-family: "Schibsted Grotesk";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+}
+.wt-num{
+    color: var(--brand-black, #16151A);
+margin: 0px;
+font-family: "Schibsted Grotesk";
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; 
+}
+.wrv{
+    color: var(--brand-black, #16151A);
+margin: 0px;
+font-family: "Schibsted Grotesk";
+font-size: 13px !important;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; 
+}
+.wt-sp{
+    padding:16px !important;
+}
+.marb-0{
+    margin-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.gap-24{
+    gap: 24px !important;
+}
+.fs-21{
+    font-size: 21px !important;
+}
+.fs-13{
+    font-size: 13px !important;
+}
+.fs-17{
+    font-size: 17px !important;
+}
+.fs-40{
+    font-size: 40px !important;
+}
+.fs-64{
+    font-size: 64px !important;
+}
+.fs-120{
+    font-size: 120px !important;
+}
+
+
+
+@media (max-width: 899px){
+    .mb-gap-24{
+        gap: 24px !important;
+    }
+    .jffe{
+        justify-content: flex-end !important;
+    }
+    .jffe b{
+        font-size:24px !important;
+    }
+    .wt-p16{
+        padding: 12px !important;
+    }
+    .mb-gp-32{
+        gap: 32px !important;
+    }
+    .mb-13{
+        font-size: 13px !important;
+    }
+    .mb-15{
+        font-size: 15px !important;
+    }
+    .mb-24{
+        font-size: 24px !important;
+    }
+    .mb-28{
+        font-size: 28px !important;
+    }
+    .mb-32{
+        font-size: 32px !important;
+    }
+    .mb-72{
+        font-size: 72px !important;
+    }
+    .mb-17{
+        font-size: 17px !important;
+    }
+    .mt-32{
+        margin-top: 32px !important;
+    }
+    .mb-p-40{
+        padding: 40px !important;
+    }
+    .class-h2 {
+        font-size: 28px;
+    }
+    .mb-flex-rev{
+        flex-direction: column-reverse;
+    }
+}

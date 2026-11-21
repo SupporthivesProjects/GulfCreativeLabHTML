@@ -1,7 +1,8 @@
 <?php include 'includes/header.php'; ?>
-<section class="ih wrap bg-v" aria-label="Terms">
-        <div class="ih-c">
-          <h1 class="h1 mk" data-r style="--d: 0.1"><span>Terms</span></h1>
+
+      <section class="ih wrap bg-v" aria-label="Terms">
+        <div class="ih-c privacy_out">
+          <h1 class="h1 mkacc_d_h1 " data-r style="--d: 0.1"><span>Terms</span></h1>
           <p class="bl" data-r style="--d: 0.35">
             Last updated 28 October 2026. These terms cover every piece you order from Gulf Creative
             Lab.
@@ -9,7 +10,7 @@
         </div>
       </section>
       <section class="sc wrap" aria-label="Terms in full">
-        <div class="lgl">
+        <div class="lgl privacy_out2">
           <section data-r style="--d: 0.1">
             <h2 class="h3">What you are buying</h2>
             <p class="bl">
@@ -63,5 +64,5 @@
         </div>
       </section>
 
-
+      
 <?php include 'includes/footer.php'; ?>

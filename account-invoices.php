@@ -1,7 +1,8 @@
 <?php include 'includes/header.php'; ?>
+
   <section class="ih ac-h wrap bg-y" aria-label="Invoices">
     <div class="ac-hc">
-      <h1 class="h1 mk in" data-r="" style="--d: 0.1">
+      <h1 class="h1 mk in acc_d_h1" data-r="" style="--d: 0.1">
         <span>Invoices</span>
       </h1>
       <p class="bl in" data-r="" style="--d: 0.35">One invoice per order, as a PDF.</p>
@@ -33,7 +34,7 @@
       <span>Total</span>
       <span></span>
     </div>
-    <div id="list">
+    <div id="list" class="acc_in_list">
       <article class="ac-i in" data-r="" style="--d:0.10">
         <h2 class="ls">GCL-0412</h2>
         <p class="br">
@@ -42,8 +43,9 @@
         </p>
         <p class="br de">3 pieces</p>
         <p class="ls">AED 661.52</p>
-        <button type="button" class="dl-b" data-nb="File not attached in this build">
+        <button type="button" class="b b-v acc_in_btn" data-nb="File not attached in this build">
           <span>Download PDF</span>
+          <svg class="pen" aria-hidden="true" viewBox="0 0 253 105"><path d="M12.41 58.50C7.28 12.21 150.96 -5.14 233.07 18.00c25.66 11.57 15.39 69.43 -56.45 78.11C99.65 104.79 12.41 93.21 7.28 52.71 4.65 29.57 53.46 6.43 120.18 6.43" style="--l: 686px;"></path></svg>
         </button>
       </article>
       <article class="ac-i in" data-r="" style="--d:0.18">
@@ -54,8 +56,9 @@
         </p>
         <p class="br de">1 piece</p>
         <p class="ls">AED 154.25</p>
-        <button type="button" class="dl-b" data-nb="File not attached in this build">
+        <button type="button" class="b b-v acc_in_btn " data-nb="File not attached in this build">
           <span>Download PDF</span>
+          <svg class="pen" aria-hidden="true" viewBox="0 0 253 105"><path d="M12.41 58.50C7.28 12.21 150.96 -5.14 233.07 18.00c25.66 11.57 15.39 69.43 -56.45 78.11C99.65 104.79 12.41 93.21 7.28 52.71 4.65 29.57 53.46 6.43 120.18 6.43" style="--l: 686px;"></path></svg>
         </button>
       </article>
       <article class="ac-i in" data-r="" style="--d:0.26">
@@ -66,10 +69,12 @@
         </p>
         <p class="br de">1 piece</p>
         <p class="ls">AED 440.70</p>
-        <button type="button" class="dl-b" data-nb="File not attached in this build">
+        <button type="button" class="b b-v acc_in_btn" data-nb="File not attached in this build">
           <span>Download PDF</span>
+          <svg class="pen" aria-hidden="true" viewBox="0 0 253 105"><path d="M12.41 58.50C7.28 12.21 150.96 -5.14 233.07 18.00c25.66 11.57 15.39 69.43 -56.45 78.11C99.65 104.79 12.41 93.21 7.28 52.71 4.65 29.57 53.46 6.43 120.18 6.43" style="--l: 686px;"></path></svg>
         </button>
       </article>
     </div>
   </section>
+
 <?php include 'includes/footer.php'; ?>

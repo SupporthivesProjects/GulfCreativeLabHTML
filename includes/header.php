@@ -22,7 +22,7 @@
           <span class="wm">Gulf Creative Lab</span>
         </a>
         <nav class="nvl" aria-label="Main">
-          <a class="n nd" href="services.php">
+          <a class="n nd on" href="services.php">
             <i>13</i>
             <b>Sv</b>
             <span>Services</span>
@@ -94,14 +94,14 @@
       </header>
       <div class="mn" id="mn" role="dialog" aria-modal="true" aria-label="Menu">
         <div class="mn-t">
-          <a class="lgo" href="index.html" aria-label="Gulf Creative Lab, home">
+          <a class="lgo" href="index.php" aria-label="Gulf Creative Lab, home">
             <span class="lgm">
               <i>1</i>
               <b>Gc</b>
             </span>
           </a>
           <div class="mn-tt">
-            <a class="n n-c" href="cart.html" aria-label="Cart">
+            <a class="n n-c" href="cart.php" aria-label="Cart">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M3 4H5.2L7.5 15H17.7L19.7 7H6.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <circle cx="9" cy="19.5" r="1.5" fill="currentColor"></circle>
@@ -116,22 +116,22 @@
           </div>
         </div>
         <div class="mn-l">
-          <a href="services.html" style="--i:0">
+          <a href="services.php" style="--i:0">
             <span class="mn-s">Sv</span>
             <b>Services</b>
             <i>13</i>
           </a>
-          <a href="about.html" style="--i:1">
+          <a href="about.php" style="--i:1">
             <span class="mn-s">Ab</span>
             <b>About us</b>
             <i>14</i>
           </a>
-          <a href="join-us.html" style="--i:2">
+          <a href="join-us.php" style="--i:2">
             <span class="mn-s">Jn</span>
             <b>Join us</b>
             <i>15</i>
           </a>
-          <a href="contact.html" style="--i:3">
+          <a href="contact.php" style="--i:3">
             <span class="mn-s">Ct</span>
             <b>Contact</b>
             <i>16</i>
@@ -147,11 +147,11 @@
             </div>
           </div>
           <div class="mn-a">
-            <a class="b b-2" href="account-pieces.html">Account <svg class="pen" aria-hidden="true">
+            <a class="b b-2" href="account-pieces.php">Account <svg class="pen" aria-hidden="true">
                 <path></path>
               </svg>
             </a>
-            <a class="b b-v" href="index.html" data-out="">Log out <svg class="pen" aria-hidden="true">
+            <a class="b b-v" href="index.php" data-out="">Log out <svg class="pen" aria-hidden="true">
                 <path></path>
               </svg>
             </a>

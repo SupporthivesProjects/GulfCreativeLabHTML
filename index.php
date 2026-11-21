@@ -406,18 +406,18 @@
         </div>
       </div>
     </div>
-    <div class="dots" aria-hidden="true">
+    <!-- <div class="dots" aria-hidden="true">
       <i class="on"></i>
       <i></i>
       <i></i>
       <i></i>
-    </div>
+    </div> -->
   </section>
   <section class="sec ho" aria-label="How ordering works">
     <div class="pin np" id="hop">
       <div class="stk wrap" id="hos">
         <div class="hd">
-          <h2 class="h2 mk" data-r="">
+          <h2 class="h2 mk p-0" data-r="">
             <span>How ordering works</span>
           </h2>
         </div>
@@ -466,7 +466,7 @@
             </div>
           </article>
         </div>
-        <div class="dots" aria-hidden="true">
+        <!-- <div class="dots" aria-hidden="true">
           <i class="on"></i>
           <i></i>
           <i></i>
@@ -474,7 +474,7 @@
           <i></i>
           <i></i>
           <i></i>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -621,11 +621,11 @@
         </div>
       </article>
     </div>
-    <div class="dots" aria-hidden="true">
+    <!-- <div class="dots" aria-hidden="true">
       <i class="on"></i>
       <i></i>
       <i></i>
-    </div>
+    </div> -->
   </section>
   <section class="sec jn wrap" aria-label="Write with us">
     <div class="jp" data-r="">

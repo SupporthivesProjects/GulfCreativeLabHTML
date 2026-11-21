@@ -73,6 +73,29 @@
             </footer>
             </main>
         </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Launch demo modal
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-body-content">
+                            <span>
+                                Ps
+                            </span>
+                            <div class="mdl-head-p">
+                                <h1>Password updated</h1>
+                                <p>
+                                    You are logged in. Your orders are where you left them.
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="uiframe/js/jquery.min.js"></script>
         <script src="uiframe/js/bootstrap.bundle.min.js"></script>
         <script src="uiframe/js/popper.min.js"></script>
